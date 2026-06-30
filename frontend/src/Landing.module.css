@@ -1,0 +1,433 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Landing — premium marketing surface.
+   Type scale (4 sizes):  --fs-display / --fs-h / --fs-body / --fs-mono
+   Weights (3):           400 / 500 / 600
+   Radius (1):            var(--r)
+   ═══════════════════════════════════════════════════════════════════ */
+.page {
+  --r: 14px;
+  --fs-display: clamp(2.8rem, 7vw, 5.4rem);
+  --fs-h: clamp(1.4rem, 2.6vw, 2rem);
+  --fs-body: clamp(1rem, 1.4vw, 1.15rem);
+  --fs-mono: 0.78rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ── Nav ─────────────────────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1280px, 92vw);
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--green);
+}
+.brandName {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.mark {
+  display: grid;
+  place-items: center;
+}
+
+/* Buttons — 3 distinct states (rest / hover / active+disabled), never blue. */
+.cta,
+.ctaSolid,
+.ctaGhost {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--r);
+  padding: 0.62rem 1.15rem;
+  cursor: pointer;
+  transition:
+    transform 0.14s ease,
+    box-shadow 0.22s ease,
+    background 0.18s ease,
+    border-color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--line-2);
+}
+.cta:hover {
+  border-color: var(--green);
+  background: rgba(76, 175, 80, 0.07);
+}
+.cta:active {
+  transform: translateY(1px);
+}
+
+.ctaSolid {
+  color: #07120a;
+  background: var(--green);
+  border: 1px solid var(--green);
+  box-shadow: var(--glow-green);
+}
+.ctaSolid:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 56px rgba(76, 175, 80, 0.5);
+}
+.ctaSolid:active {
+  transform: translateY(0);
+}
+
+.ctaGhost {
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+.ctaGhost:hover {
+  border-color: var(--green);
+  color: var(--text);
+}
+.ctaGhost:active {
+  transform: translateY(1px);
+}
+
+/* ── Hero ────────────────────────────────────────────── */
+.hero {
+  width: min(1280px, 92vw);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vh, 6rem) 0 var(--section);
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.heroCopy {
+  max-width: 36rem;
+}
+
+.kicker {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 1.3rem;
+}
+
+.title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: var(--fs-display);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.2rem;
+  color: var(--text);
+}
+.title em {
+  font-style: normal;
+  color: var(--green);
+  text-shadow: var(--glow-green);
+}
+
+.sub {
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-dim);
+  margin: 0 0 1.8rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.heroStage {
+  position: relative;
+  height: clamp(340px, 46vh, 520px);
+  overflow: hidden;
+}
+.heroStage::after {
+  content: "";
+  position: absolute;
+  inset: 12% 8%;
+  z-index: -1;
+  background: radial-gradient(closest-side, rgba(76, 175, 80, 0.18), transparent 70%);
+  filter: blur(8px);
+}
+
+/* ── Generic section ─────────────────────────────────── */
+.section {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: var(--section) 0;
+  border-top: 1px solid var(--line);
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 1.4rem;
+}
+
+.lede {
+  font-size: var(--fs-h);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+  max-width: 48rem;
+  margin: 0 0 2.2rem;
+}
+
+/* stat badges */
+.badges {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+.badge {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.badge b {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: var(--fs-h);
+  letter-spacing: -0.01em;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+.badge span {
+  font-family: var(--mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ── How it works flow ───────────────────────────────── */
+.flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.9rem;
+}
+.step {
+  position: relative;
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 1.2rem 1.1rem 1.3rem;
+}
+.stepN {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: var(--fs-mono);
+  color: var(--green);
+  letter-spacing: 0.1em;
+}
+.stepT {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin: 0.5rem 0 0.4rem;
+  color: var(--text);
+}
+.stepD {
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0;
+}
+.stepArrow {
+  position: absolute;
+  right: -0.75rem;
+  top: 1.1rem;
+  z-index: 2;
+  color: var(--line-2);
+  font-family: var(--mono);
+}
+
+/* ── Live stats ──────────────────────────────────────── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+}
+.stat {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stat b {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.stat span {
+  font-family: var(--mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.ember {
+  color: var(--ember) !important;
+}
+
+/* ── FAQ ─────────────────────────────────────────────── */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.faqItem {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: border-color 0.18s ease;
+}
+.faqOpen {
+  border-color: var(--green-dim);
+}
+.faqQ {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1.1rem 1.3rem;
+  text-align: left;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: var(--fs-body);
+  color: var(--text);
+}
+.faqIcon {
+  font-family: var(--mono);
+  font-style: normal;
+  color: var(--green);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.faqA {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faqA p {
+  margin: 0;
+  padding: 0 1.3rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+.footer {
+  width: min(1280px, 92vw);
+  margin: 0 auto;
+  padding: var(--section) 0 3rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footBrand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.footTag {
+  font-size: 0.9rem;
+  color: var(--text-faint);
+}
+.footLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: var(--fs-mono);
+}
+.footLinks a {
+  color: var(--text-dim);
+}
+.footLinks a:hover {
+  color: var(--green);
+}
+.footMono {
+  color: var(--text-faint);
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .heroStage {
+    order: -1;
+    min-height: 320px;
+  }
+  .badges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stepArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .flow {
+    grid-template-columns: 1fr;
+  }
+  .nav .cta {
+    display: none;
+  }
+}

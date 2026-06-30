@@ -1,0 +1,325 @@
+.page {
+  min-height: 100vh;
+}
+
+/* ── Top bar ─────────────────────────────────────────── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1440px, 94vw);
+  margin: 0 auto;
+  padding: 0.9rem 0;
+  background: linear-gradient(180deg, var(--oxide) 60%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--text);
+}
+.brand .mark {
+  color: var(--green);
+  display: grid;
+  place-items: center;
+}
+
+.topRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.live {
+  background: var(--green);
+  box-shadow: 0 0 12px var(--green);
+  animation: biocell-pulse 1.8s ease-in-out infinite;
+}
+.dead {
+  background: var(--ember);
+  box-shadow: 0 0 12px var(--ember);
+}
+.statusText {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* ── Body ────────────────────────────────────────────── */
+.body {
+  width: min(1440px, 94vw);
+  margin: 0 auto;
+  padding: 1.6rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.2rem, 3vw, 2rem);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.8rem;
+}
+.metric {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.metric b {
+  font-family: var(--mono);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.metric span {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ── 3-zone layout ───────────────────────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr 1fr;
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+  align-items: start;
+}
+
+.selector,
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 5rem;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+  min-width: 0;
+}
+
+/* selector card */
+.card {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.2rem 1.3rem;
+}
+.cardLabel {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.selectRow {
+  display: flex;
+  gap: 0.5rem;
+}
+.in {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text);
+  background: var(--oxide);
+  border: 1px solid var(--line-2);
+  border-radius: 9px;
+  padding: 0.55rem 0.65rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.in:focus {
+  border-color: var(--green);
+}
+.selBtn {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: #07120a;
+  background: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 9px;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.selBtn:hover {
+  transform: translateY(-1px);
+}
+.selBtn:active {
+  transform: translateY(0);
+}
+
+.packMeta {
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.packMeta div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.packMeta dt {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.packMeta dd {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.hint {
+  margin: 1rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+/* center stage orb */
+.orbRow {
+  background: var(--oxide-3);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+.orbAside {
+  min-width: 0;
+}
+.stageTitle {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+.stageSub {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  margin: 0 0 1rem;
+}
+.miniStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+}
+.miniStats span {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+.miniStats b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  word-break: break-all;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  align-items: center;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  color: var(--text-faint);
+  font-size: 0.8rem;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.4rem;
+  translate: -50% 0;
+  z-index: 50;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text);
+  background: var(--oxide-2);
+  border: 1px solid var(--green-dim);
+  box-shadow: var(--glow-green);
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  max-width: 90vw;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .actions {
+    grid-column: 1 / -1;
+    position: static;
+  }
+}
+
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .selector,
+  .actions {
+    position: static;
+  }
+  .orbRow {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

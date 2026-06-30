@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════════════════════════════════
+   BioCell — design tokens (user green/earthy palette, dark variant)
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* palette (mapped from the provided .dark theme) */
+  --oxide: #1c2a1f; /* background */
+  --oxide-2: #243127; /* raised surface */
+  --oxide-3: #2d3a2e; /* card surface */
+  --line: #3e4a3d; /* hairline borders */
+  --line-2: #4b594a;
+
+  --green: #4caf50; /* primary / alive */
+  --green-dim: #2e7d32;
+  --ash: #8a9587; /* neutral tissue */
+  --ash-2: #d7cfc4; /* muted foreground */
+  --ember: #c62828; /* destructive / failing */
+  --ember-dim: #8e1f1f;
+
+  --text: #f0ebe5;
+  --text-dim: #d7cfc4;
+  --text-faint: #9aa896;
+
+  /* type */
+  --display: "Montserrat", system-ui, sans-serif;
+  --mono: "Source Code Pro", ui-monospace, Menlo, monospace;
+  --serif: "Merriweather", Georgia, serif;
+
+  /* glow */
+  --glow-green: 0 0 40px rgba(76, 175, 80, 0.35);
+  --glow-ember: 0 0 40px rgba(198, 40, 40, 0.32);
+
+  /* spacing rhythm */
+  --gut: clamp(1.1rem, 3vw, 2.4rem);
+  --section: clamp(3rem, 9vh, 7rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(1200px 700px at 70% -10%, rgba(76, 175, 80, 0.10), transparent 60%),
+    radial-gradient(900px 600px at 0% 110%, rgba(46, 125, 50, 0.08), transparent 55%),
+    var(--oxide);
+  color: var(--text);
+  font-family: var(--display);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(76, 175, 80, 0.28);
+  color: #fff;
+}
+
+/* slim custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes biocell-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ── App-level semantic tokens consumed by the RainbowKit overrides ──── */
+:root {
+  --app-accent: var(--green);
+  --app-on-accent: #0a1f0c;
+  --app-surface: var(--oxide-3);
+  --app-surface-2: var(--oxide-2);
+  --app-text: var(--text);
+  --app-text-dim: var(--text-dim);
+  --app-border: var(--line-2);
+  --app-font-body: var(--display);
+  --app-radius: 8px;
+}
+
+/* ── Theme the RainbowKit modal + connect button to the app palette ──── */
+[data-rk] {
+  --rk-colors-accentColor: var(--app-accent);
+  --rk-colors-accentColorForeground: var(--app-on-accent);
+  --rk-colors-modalBackground: var(--app-surface);
+  --rk-colors-modalText: var(--app-text);
+  --rk-colors-modalTextSecondary: var(--app-text-dim);
+  --rk-colors-profileForeground: var(--app-surface-2);
+  --rk-colors-connectButtonBackground: var(--app-surface);
+  --rk-colors-connectButtonText: var(--app-text);
+  --rk-colors-actionButtonBorder: var(--app-border);
+  --rk-colors-closeButton: var(--app-text-dim);
+  --rk-colors-generalBorder: var(--app-border);
+  --rk-fonts-body: var(--app-font-body);
+  --rk-radii-modal: var(--app-radius);
+  --rk-radii-modalMobile: var(--app-radius);
+  --rk-radii-menuButton: 8px;
+  --rk-radii-connectButton: 8px;
+  --rk-radii-actionButton: 8px;
+}

@@ -1,0 +1,46 @@
+{
+  "app": "battery-health",
+  "hub": "06-wren",
+  "contract_class": "BatteryLedger",
+  "operation_type": "SCORING",
+  "domain": "ev_battery_soh_continuous_scoring",
+  "architecture": "event_sourced_ledger",
+  "network": "testnet-bradbury",
+  "rpc_url": "https://rpc-bradbury.genlayer.com",
+  "chain_id": 4221,
+  "explorer": "https://explorer.testnet-chain.genlayer.com",
+  "deployer_address": "0x2C2CDe209865AbB5a676D6Ec0dB60A9a9cC579a2",
+  "contract_address": "0xBb85f2210755f48886F7b8169cE022bF9C1929b3",
+  "deploy_tx_hash": "0x8ad36bafd88d0701d65c402305c43f0e98ca35a18ee90ca624b1a61833e869ae",
+  "deployed_via": "genlayer CLI 0.39.2 (genlayer deploy)",
+  "deployed_at_iso": "2026-06-23T19:40:00Z",
+  "source_file": "backend/battery-health.bradbury.py",
+  "source_note": "Bradbury enforces a per-transaction pubdata/block-gas limit (block gas limit 100,000,000). The full ~68KB source (backend/battery-health.py) trips 'BlockPubdataLimitReached' on deploy on both genlayer-py and the official genlayer CLI. battery-health.bradbury.py is an AST-minified build (comments + docstrings stripped, Depends pin preserved) that is byte-for-byte logic-identical (verified via ast.dump equality) and fits the limit at ~47KB. Studio (gasless, no pubdata cap) deploys the full file fine.",
+  "contract_source_sha256_full": "909eeb3a5677edfd4ea6ba02a17a827f63c0dda779869e76d79bb1695ec5d9d9",
+  "contract_source_sha256_deployed_minified": "7c7ad8b0ea627b4e1c85ac7972495d892b716f67c29c24db1bb2b553bcada892",
+  "minified_bytes": 47876,
+  "full_bytes": 67959,
+  "sdk_versions": { "genlayer-cli": "0.39.2", "genlayer-py": "0.16.3", "genlayer-js": "1.1.8" },
+  "live_flow_verification": {
+    "register_pack": "SUCCESS (pack bradbury-1782243284, manifest web.get OK)",
+    "register_oracle": "SUCCESS (FINISHED_WITH_RETURN)",
+    "post_telemetry_llm": "SUCCESS (LLM coherence + consensus on real Bradbury validators)",
+    "score": "50 -> 94 after telemetry",
+    "events": ["PACK_REGISTERED", "TELEMETRY_POSTED", "SCORE_RECOMPUTED", "ORACLE_REGISTERED"]
+  },
+  "verify_view_result": {
+    "market_summary": {
+      "packs_registered": 1,
+      "packs_slashed": 0,
+      "telemetry_events": 1,
+      "score_recompute_events": 1,
+      "slash_events": 0,
+      "total_bonded": 1000,
+      "total_payouts": 0,
+      "log_length": 4
+    }
+  },
+  "previous_deployments": {
+    "studionet_full_contract": "0xc5b9610bC21Fd1fb1a9FCC2E89e997CE7e7BEF17 (hosted studionet, full source, E0100 demonstrated)"
+  }
+}

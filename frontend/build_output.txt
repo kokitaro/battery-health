@@ -1,0 +1,251 @@
+
+> battery-health@1.0.0 build
+> tsc -b && vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/Base64.js (6:27): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/Base64.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@base-org/account/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@base-org/account/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@base-org/account/node_modules/ox/_esm/core/Base64.js (6:27): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@base-org/account/node_modules/ox/_esm/core/Base64.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@wagmi/connectors/node_modules/ox/_esm/core/Base64.js (6:27): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@wagmi/connectors/node_modules/ox/_esm/core/Base64.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@coinbase/wallet-sdk/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@base-org/account/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@base-org/account/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@walletconnect/utils/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@walletconnect/utils/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@walletconnect/utils/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@walletconnect/utils/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@reown/appkit/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@reown/appkit/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@reown/appkit/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@reown/appkit/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@reown/appkit-controllers/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@reown/appkit-controllers/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/@reown/appkit-controllers/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/@reown/appkit-controllers/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[32m✓[39m 6045 modules transformed.
+Circular chunk: wagmi -> crypto -> wagmi. Please adjust the manual chunk logic for these chunks.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                                       [39m[1m[2m  2.23 kB[22m[1m[22m[2m │ gzip:   0.92 kB[22m
+[2mdist/[22m[35massets/index-CCmxyZmu.css                        [39m[1m[2m 49.98 kB[22m[1m[22m[2m │ gzip:   9.13 kB[22m
+[2mdist/[22m[36massets/cursor-BWdzov6S.js                        [39m[1m[2m  0.41 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+[2mdist/[22m[36massets/celo-GEP4TUHG-CenIBYLU.js                 [39m[1m[2m  0.51 kB[22m[1m[22m[2m │ gzip:   0.31 kB[22m
+[2mdist/[22m[36massets/Windows-PPTHQER6-BlyV2p7Y.js              [39m[1m[2m  0.52 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+[2mdist/[22m[36massets/chevron-left-D5vPMBTi.js                  [39m[1m[2m  0.55 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/chevron-top-CLwbFjqp.js                   [39m[1m[2m  0.55 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/external-link-BZilJREO.js                 [39m[1m[2m  0.55 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/chevron-bottom-DZ3kPaBw.js                [39m[1m[2m  0.55 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/chevron-right-7yQlBATd.js                 [39m[1m[2m  0.55 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/arrow-top-D355zBqT.js                     [39m[1m[2m  0.56 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/arrow-bottom-Bzd2oDhK.js                  [39m[1m[2m  0.56 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/arrow-left-CDhDqgXB.js                    [39m[1m[2m  0.56 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/arrow-right-CusYeFYj.js                   [39m[1m[2m  0.57 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/off-NvSeFVqB.js                           [39m[1m[2m  0.58 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/search-vMVQ1ija.js                        [39m[1m[2m  0.59 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m
+[2mdist/[22m[36massets/close-D6S_5QWM.js                         [39m[1m[2m  0.59 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+[2mdist/[22m[36massets/zetachain-TLDS5IPW-Udhyw16T.js            [39m[1m[2m  0.60 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+[2mdist/[22m[36massets/all-wallets-CvUsXpZZ.js                   [39m[1m[2m  0.60 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m
+[2mdist/[22m[36massets/filters-DQEsd-ku.js                       [39m[1m[2m  0.60 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mdist/[22m[36massets/base-OAXLRA4F-CoYTVIiL.js                 [39m[1m[2m  0.60 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m
+[2mdist/[22m[36massets/info-circle-CDvdi5Cc.js                   [39m[1m[2m  0.62 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m
+[2mdist/[22m[36massets/more-Dck-dSLC.js                          [39m[1m[2m  0.64 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+[2mdist/[22m[36massets/refresh-M49gX_Gh.js                       [39m[1m[2m  0.64 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[36massets/warning-circle-DkoL16IY.js                [39m[1m[2m  0.65 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+[2mdist/[22m[36massets/coinPlaceholder-Xc68PKFW.js               [39m[1m[2m  0.65 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+[2mdist/[22m[36massets/compass-BOO2ylm4.js                       [39m[1m[2m  0.67 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+[2mdist/[22m[36massets/swapVertical-DkHjdmCl.js                  [39m[1m[2m  0.70 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+[2mdist/[22m[36massets/swapHorizontal-DfbQ58cc.js                [39m[1m[2m  0.70 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[36massets/x-BANuqpmz.js                             [39m[1m[2m  0.72 kB[22m[1m[22m[2m │ gzip:   0.47 kB[22m
+[2mdist/[22m[36massets/hyperevm-VKPAA4SA-CHwraEsx.js             [39m[1m[2m  0.73 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m
+[2mdist/[22m[36massets/optimism-HAF2GUT7-ec6Nqxs9.js             [39m[1m[2m  0.73 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+[2mdist/[22m[36massets/cursor-transparent-tiWMA9JK.js            [39m[1m[2m  0.73 kB[22m[1m[22m[2m │ gzip:   0.43 kB[22m
+[2mdist/[22m[36massets/twitterIcon-B6uCnxqe.js                   [39m[1m[2m  0.73 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+[2mdist/[22m[36massets/monad-4KWC6TSS-DVXSkpiz.js                [39m[1m[2m  0.74 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[36massets/mobile-BjysQTyY.js                        [39m[1m[2m  0.74 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[36massets/checkmark-bold-CVW84rzH.js                [39m[1m[2m  0.80 kB[22m[1m[22m[2m │ gzip:   0.51 kB[22m
+[2mdist/[22m[36massets/etherscan-DrumWKWT.js                     [39m[1m[2m  0.85 kB[22m[1m[22m[2m │ gzip:   0.53 kB[22m
+[2mdist/[22m[36massets/checkmark-B0dnpC7n.js                     [39m[1m[2m  0.85 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m
+[2mdist/[22m[36massets/help-circle-BT8yD_JT.js                   [39m[1m[2m  0.86 kB[22m[1m[22m[2m │ gzip:   0.50 kB[22m
+[2mdist/[22m[36massets/flow-5FQJFCTK-CUie2reO.js                 [39m[1m[2m  0.86 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+[2mdist/[22m[36massets/wallet-D8JTgmjC.js                        [39m[1m[2m  0.87 kB[22m[1m[22m[2m │ gzip:   0.49 kB[22m
+[2mdist/[22m[36massets/base-QS6CYWIN-CsjdbWCf.js                 [39m[1m[2m  0.90 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+[2mdist/[22m[36massets/plus-D1SpCIB1.js                          [39m[1m[2m  0.91 kB[22m[1m[22m[2m │ gzip:   0.50 kB[22m
+[2mdist/[22m[36massets/verify-filled-D-mACMsU.js                 [39m[1m[2m  0.92 kB[22m[1m[22m[2m │ gzip:   0.54 kB[22m
+[2mdist/[22m[36massets/add-DWIyp6In.js                           [39m[1m[2m  0.92 kB[22m[1m[22m[2m │ gzip:   0.50 kB[22m
+[2mdist/[22m[36massets/google-CU3Cp7GE.js                        [39m[1m[2m  0.96 kB[22m[1m[22m[2m │ gzip:   0.53 kB[22m
+[2mdist/[22m[36massets/unichain-C5BWO2ZY-BfguYsnu.js             [39m[1m[2m  0.98 kB[22m[1m[22m[2m │ gzip:   0.46 kB[22m
+[2mdist/[22m[36massets/superposition-HG6MMR2Y-bRkgatRO.js        [39m[1m[2m  0.99 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m
+[2mdist/[22m[36massets/three-dots-hnRpfKdK.js                    [39m[1m[2m  0.99 kB[22m[1m[22m[2m │ gzip:   0.48 kB[22m
+[2mdist/[22m[36massets/clock-DUxds0gu.js                         [39m[1m[2m  0.99 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m
+[2mdist/[22m[36massets/disconnect-BwqrRcUK.js                    [39m[1m[2m  1.04 kB[22m[1m[22m[2m │ gzip:   0.58 kB[22m
+[2mdist/[22m[36massets/twitch-CpYy-kJ4.js                        [39m[1m[2m  1.05 kB[22m[1m[22m[2m │ gzip:   0.57 kB[22m
+[2mdist/[22m[36massets/linea-QRMVQ5DY-DuI3vv0d.js                [39m[1m[2m  1.05 kB[22m[1m[22m[2m │ gzip:   0.47 kB[22m
+[2mdist/[22m[36massets/bank-Culvttqm.js                          [39m[1m[2m  1.09 kB[22m[1m[22m[2m │ gzip:   0.60 kB[22m
+[2mdist/[22m[36massets/apple-BF4RO3kI.js                         [39m[1m[2m  1.11 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/zksync-DH7HK5U4-Dt4usFw6.js               [39m[1m[2m  1.11 kB[22m[1m[22m[2m │ gzip:   0.49 kB[22m
+[2mdist/[22m[36massets/play-store-By9ptKSM.js                    [39m[1m[2m  1.16 kB[22m[1m[22m[2m │ gzip:   0.60 kB[22m
+[2mdist/[22m[36massets/farcaster-B7lhPdmn.js                     [39m[1m[2m  1.17 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/avalanche-KOMJD3XY-Dsn_JPR4.js            [39m[1m[2m  1.27 kB[22m[1m[22m[2m │ gzip:   0.66 kB[22m
+[2mdist/[22m[36massets/arrow-bottom-circle-Beyr6Cud.js           [39m[1m[2m  1.28 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/github-kUyToT9R.js                        [39m[1m[2m  1.28 kB[22m[1m[22m[2m │ gzip:   0.68 kB[22m
+[2mdist/[22m[36massets/xdc-KJ3TDBYO-DNV6zchh.js                  [39m[1m[2m  1.31 kB[22m[1m[22m[2m │ gzip:   0.60 kB[22m
+[2mdist/[22m[36massets/swapHorizontalBold-MIsFIqE-.js            [39m[1m[2m  1.31 kB[22m[1m[22m[2m │ gzip:   0.70 kB[22m
+[2mdist/[22m[36massets/app-store-BThDXUOP.js                     [39m[1m[2m  1.35 kB[22m[1m[22m[2m │ gzip:   0.75 kB[22m
+[2mdist/[22m[36massets/mail-DABPT9IA.js                          [39m[1m[2m  1.36 kB[22m[1m[22m[2m │ gzip:   0.73 kB[22m
+[2mdist/[22m[36massets/ethereum-RGGVA4PY-SWGOlkuk.js             [39m[1m[2m  1.37 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+[2mdist/[22m[36massets/ink-FZMYZWHG-62p-5IK5.js                  [39m[1m[2m  1.38 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/facebook-DDvQCXpg.js                      [39m[1m[2m  1.38 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m
+[2mdist/[22m[36massets/wallet-placeholder-BhldAi-0.js            [39m[1m[2m  1.41 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m
+[2mdist/[22m[36massets/desktop-CXBUGty5.js                       [39m[1m[2m  1.42 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m
+[2mdist/[22m[36massets/discord-DcUqVtqz.js                       [39m[1m[2m  1.45 kB[22m[1m[22m[2m │ gzip:   0.73 kB[22m
+[2mdist/[22m[36massets/swapHorizontalMedium-C5olczAI.js          [39m[1m[2m  1.45 kB[22m[1m[22m[2m │ gzip:   0.76 kB[22m
+[2mdist/[22m[36massets/apechain-SX5YFU6N-q5qBv-mp.js             [39m[1m[2m  1.46 kB[22m[1m[22m[2m │ gzip:   0.64 kB[22m
+[2mdist/[22m[36massets/kaia-65D2U3PU-JmuLQ4gC.js                 [39m[1m[2m  1.48 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m
+[2mdist/[22m[36massets/degen-FQQ4XGHB-CeHTs88l.js                [39m[1m[2m  1.49 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m
+[2mdist/[22m[36massets/recycle-horizontal--ygu4Q0D.js            [39m[1m[2m  1.49 kB[22m[1m[22m[2m │ gzip:   0.79 kB[22m
+[2mdist/[22m[36massets/cronos-HJPAQTAE-BEOvlOC4.js               [39m[1m[2m  1.52 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/polygon-WW6ZI7PM-DXlmm4L1.js              [39m[1m[2m  1.53 kB[22m[1m[22m[2m │ gzip:   0.63 kB[22m
+[2mdist/[22m[36massets/gravity-J5YQHTYH-Bj6B0uod.js              [39m[1m[2m  1.54 kB[22m[1m[22m[2m │ gzip:   0.74 kB[22m
+[2mdist/[22m[36massets/extension-Lax7Dzmq.js                     [39m[1m[2m  1.58 kB[22m[1m[22m[2m │ gzip:   0.78 kB[22m
+[2mdist/[22m[36massets/bsc-N647EYR2-B2nLKXWV.js                  [39m[1m[2m  1.59 kB[22m[1m[22m[2m │ gzip:   0.61 kB[22m
+[2mdist/[22m[36massets/telegram-DNFm0j0L.js                      [39m[1m[2m  1.60 kB[22m[1m[22m[2m │ gzip:   0.92 kB[22m
+[2mdist/[22m[36massets/swapHorizontalRoundedBold-BBXPOjGS.js     [39m[1m[2m  1.61 kB[22m[1m[22m[2m │ gzip:   0.85 kB[22m
+[2mdist/[22m[36massets/verify-BGCiC281.js                        [39m[1m[2m  1.62 kB[22m[1m[22m[2m │ gzip:   0.79 kB[22m
+[2mdist/[22m[36massets/qr-code-BRWxwN72.js                       [39m[1m[2m  1.67 kB[22m[1m[22m[2m │ gzip:   0.60 kB[22m
+[2mdist/[22m[36massets/blast-V555OVXZ-BbhJh1tj.js                [39m[1m[2m  1.67 kB[22m[1m[22m[2m │ gzip:   0.73 kB[22m
+[2mdist/[22m[36massets/Chrome-65Q5P54Y-DR9MQEVr.js               [39m[1m[2m  1.72 kB[22m[1m[22m[2m │ gzip:   0.58 kB[22m
+[2mdist/[22m[36massets/browser-DfjvB4WM.js                       [39m[1m[2m  1.73 kB[22m[1m[22m[2m │ gzip:   0.87 kB[22m
+[2mdist/[22m[36massets/gnosis-37ZC4RBL-B137OtHZ.js               [39m[1m[2m  1.80 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m
+[2mdist/[22m[36massets/network-placeholder-D_Bp-inJ.js           [39m[1m[2m  1.80 kB[22m[1m[22m[2m │ gzip:   0.81 kB[22m
+[2mdist/[22m[36massets/safeWallet-5MNKTR5Z-D-5imDLD.js           [39m[1m[2m  1.82 kB[22m[1m[22m[2m │ gzip:   0.71 kB[22m
+[2mdist/[22m[36massets/walletConnectWallet-YHWKVTDY-D3lyiczV.js  [39m[1m[2m  1.88 kB[22m[1m[22m[2m │ gzip:   0.70 kB[22m
+[2mdist/[22m[36massets/id-DfahAQhL.js                            [39m[1m[2m  1.90 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+[2mdist/[22m[36massets/nftPlaceholder-Czb3vjwe.js                [39m[1m[2m  1.90 kB[22m[1m[22m[2m │ gzip:   0.95 kB[22m
+[2mdist/[22m[36massets/Opera-KQZLSACL-Cwv5MDFy.js                [39m[1m[2m  2.10 kB[22m[1m[22m[2m │ gzip:   0.76 kB[22m
+[2mdist/[22m[36massets/metaMaskWallet-EI6MED72-D5HFOsnz.js       [39m[1m[2m  2.20 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+[2mdist/[22m[36massets/info-D6V29w-P.js                          [39m[1m[2m  2.41 kB[22m[1m[22m[2m │ gzip:   1.23 kB[22m
+[2mdist/[22m[36massets/exclamation-triangle-D-KuLzGA.js          [39m[1m[2m  2.57 kB[22m[1m[22m[2m │ gzip:   1.22 kB[22m
+[2mdist/[22m[36massets/send-CgzH3T9t.js                          [39m[1m[2m  2.57 kB[22m[1m[22m[2m │ gzip:   1.37 kB[22m
+[2mdist/[22m[36massets/arbitrum-WURIBY6W-CqVkHBr5.js             [39m[1m[2m  2.59 kB[22m[1m[22m[2m │ gzip:   0.86 kB[22m
+[2mdist/[22m[36massets/scroll-5OBGQVOV-DJFECiai.js               [39m[1m[2m  2.63 kB[22m[1m[22m[2m │ gzip:   1.02 kB[22m
+[2mdist/[22m[36massets/ronin-EMCPYXZT-N-QBHZdV.js                [39m[1m[2m  2.67 kB[22m[1m[22m[2m │ gzip:   1.20 kB[22m
+[2mdist/[22m[36massets/zora-FYL5H3IO-iB4wygST.js                 [39m[1m[2m  2.68 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m
+[2mdist/[22m[36massets/card-DeUz1H-6.js                          [39m[1m[2m  2.74 kB[22m[1m[22m[2m │ gzip:   1.26 kB[22m
+[2mdist/[22m[36massets/chrome-store-Da3Ene5k.js                  [39m[1m[2m  2.74 kB[22m[1m[22m[2m │ gzip:   1.09 kB[22m
+[2mdist/[22m[36massets/reown-logo-BsOwrWYl.js                    [39m[1m[2m  2.75 kB[22m[1m[22m[2m │ gzip:   1.16 kB[22m
+[2mdist/[22m[36massets/lightbulb-DjhYFj2J.js                     [39m[1m[2m  2.86 kB[22m[1m[22m[2m │ gzip:   1.31 kB[22m
+[2mdist/[22m[36massets/refresh-S4T5V5GX-CwqIaaxK.js              [39m[1m[2m  3.00 kB[22m[1m[22m[2m │ gzip:   0.95 kB[22m
+[2mdist/[22m[36massets/manta-SI27YFEJ-CpVOKa06.js                [39m[1m[2m  3.20 kB[22m[1m[22m[2m │ gzip:   1.33 kB[22m
+[2mdist/[22m[36massets/connect-UA7M4XW6-IY3X6Bmr.js              [39m[1m[2m  3.55 kB[22m[1m[22m[2m │ gzip:   1.08 kB[22m
+[2mdist/[22m[36massets/image-zcJt6F1E.js                         [39m[1m[2m  3.64 kB[22m[1m[22m[2m │ gzip:   1.60 kB[22m
+[2mdist/[22m[36massets/berachain-NJECWIVC-DumxnFvf.js            [39m[1m[2m  3.78 kB[22m[1m[22m[2m │ gzip:   1.25 kB[22m
+[2mdist/[22m[36massets/copy-EpTFe01P.js                          [39m[1m[2m  3.97 kB[22m[1m[22m[2m │ gzip:   1.57 kB[22m
+[2mdist/[22m[36massets/hardhat-TX56IT5N-CV1FY-wE.js              [39m[1m[2m  4.20 kB[22m[1m[22m[2m │ gzip:   1.35 kB[22m
+[2mdist/[22m[36massets/walletconnect-CBiIOpWs.js                 [39m[1m[2m  4.21 kB[22m[1m[22m[2m │ gzip:   1.75 kB[22m
+[2mdist/[22m[36massets/Brave-BRAKJXDS-mq-Xo37j.js                [39m[1m[2m  4.26 kB[22m[1m[22m[2m │ gzip:   1.49 kB[22m
+[2mdist/[22m[36massets/create-FASO7PVG-D_rvSpre.js               [39m[1m[2m  4.33 kB[22m[1m[22m[2m │ gzip:   1.09 kB[22m
+[2mdist/[22m[36massets/scan-4UYSQ56Q-CjMz6-XC.js                 [39m[1m[2m  4.59 kB[22m[1m[22m[2m │ gzip:   1.16 kB[22m
+[2mdist/[22m[36massets/rainbowWallet-O26YNBMX-DUhYus-9.js        [39m[1m[2m  5.12 kB[22m[1m[22m[2m │ gzip:   0.96 kB[22m
+[2mdist/[22m[36massets/mantle-CKIUT334-DR2WgqzU.js               [39m[1m[2m  5.27 kB[22m[1m[22m[2m │ gzip:   2.25 kB[22m
+[2mdist/[22m[36massets/sign-A7IJEUT5-CGsRnPrd.js                 [39m[1m[2m  5.55 kB[22m[1m[22m[2m │ gzip:   4.23 kB[22m
+[2mdist/[22m[36massets/Edge-XSPUTORV-DEoZslQE.js                 [39m[1m[2m  5.82 kB[22m[1m[22m[2m │ gzip:   1.34 kB[22m
+[2mdist/[22m[36massets/index-B9fA-DQm.js                         [39m[1m[2m  5.92 kB[22m[1m[22m[2m │ gzip:   2.15 kB[22m
+[2mdist/[22m[36massets/events-uhdDs-hd.js                        [39m[1m[2m  6.14 kB[22m[1m[22m[2m │ gzip:   2.12 kB[22m
+[2mdist/[22m[36massets/Arc-VDBY7LNS-BChRXCXW.js                  [39m[1m[2m  6.62 kB[22m[1m[22m[2m │ gzip:   1.62 kB[22m
+[2mdist/[22m[36massets/react-yvcgGv6i.js                         [39m[1m[2m  8.69 kB[22m[1m[22m[2m │ gzip:   3.21 kB[22m
+[2mdist/[22m[36massets/Browser-76IHF3Y2-BMhRaC5Z.js              [39m[1m[2m 11.82 kB[22m[1m[22m[2m │ gzip:   2.18 kB[22m
+[2mdist/[22m[36massets/login-UP3DZBGS-Db_wM5oQ.js                [39m[1m[2m 12.00 kB[22m[1m[22m[2m │ gzip:   2.98 kB[22m
+[2mdist/[22m[36massets/Safari-ZPL37GXR-C4Ggg6rz.js               [39m[1m[2m 13.75 kB[22m[1m[22m[2m │ gzip:   3.75 kB[22m
+[2mdist/[22m[36massets/Firefox-AAHGJQIP-Bp_Hm04m.js              [39m[1m[2m 15.19 kB[22m[1m[22m[2m │ gzip:   3.39 kB[22m
+[2mdist/[22m[36massets/sanko-RHQYXGM5-OX010CbN.js                [39m[1m[2m 21.93 kB[22m[1m[22m[2m │ gzip:  16.45 kB[22m
+[2mdist/[22m[36massets/assets-Q6ZU7ZJ5-P8HioiAD.js               [39m[1m[2m 23.62 kB[22m[1m[22m[2m │ gzip:   4.10 kB[22m
+[2mdist/[22m[36massets/index-zjENZBiQ.js                         [39m[1m[2m 26.39 kB[22m[1m[22m[2m │ gzip:   7.52 kB[22m
+[2mdist/[22m[36massets/zh_CN-4XK5YJPR-Bt6Yz5Ek.js                [39m[1m[2m 38.01 kB[22m[1m[22m[2m │ gzip:   5.75 kB[22m
+[2mdist/[22m[36massets/zh_TW-CNCRXH6Z-BNelatfN.js                [39m[1m[2m 38.40 kB[22m[1m[22m[2m │ gzip:   5.46 kB[22m
+[2mdist/[22m[36massets/zh_HK-N4YN2WSI-Cvzl1V16.js                [39m[1m[2m 38.65 kB[22m[1m[22m[2m │ gzip:   5.51 kB[22m
+[2mdist/[22m[36massets/index-DapNvriE.js                         [39m[1m[2m 39.26 kB[22m[1m[22m[2m │ gzip:   9.45 kB[22m
+[2mdist/[22m[36massets/w3m-modal-C2dRikCc.js                     [39m[1m[2m 40.21 kB[22m[1m[22m[2m │ gzip:   9.47 kB[22m
+[2mdist/[22m[36massets/tanstack-BwsKKaEs.js                      [39m[1m[2m 41.31 kB[22m[1m[22m[2m │ gzip:  12.29 kB[22m
+[2mdist/[22m[36massets/ko_KR-FR54RFUG-upinSHjQ.js                [39m[1m[2m 43.89 kB[22m[1m[22m[2m │ gzip:   6.52 kB[22m
+[2mdist/[22m[36massets/ja_JP-ZRMWJV3I-DXbifiMm.js                [39m[1m[2m 44.39 kB[22m[1m[22m[2m │ gzip:   6.62 kB[22m
+[2mdist/[22m[36massets/Macos-MW4AE7LN-Vvm8Drw3.js                [39m[1m[2m 49.68 kB[22m[1m[22m[2m │ gzip:  35.82 kB[22m
+[2mdist/[22m[36massets/ar_AR-LIPSOZP5-BQrIDibT.js                [39m[1m[2m 52.21 kB[22m[1m[22m[2m │ gzip:   6.19 kB[22m
+[2mdist/[22m[36massets/d3-hh1mAbma.js                            [39m[1m[2m 54.03 kB[22m[1m[22m[2m │ gzip:  18.56 kB[22m
+[2mdist/[22m[36massets/th_TH-4YB4VSB2-BUipNP-V.js                [39m[1m[2m 56.18 kB[22m[1m[22m[2m │ gzip:   7.67 kB[22m
+[2mdist/[22m[36massets/vi_VN-5EVRZKLY-x078672g.js                [39m[1m[2m 58.55 kB[22m[1m[22m[2m │ gzip:   5.47 kB[22m
+[2mdist/[22m[36massets/tr_TR-5FKHPPIO-D5jTpIm9.js                [39m[1m[2m 59.53 kB[22m[1m[22m[2m │ gzip:   5.74 kB[22m
+[2mdist/[22m[36massets/id_ID-SBYANJ7G-Cjpa4ay6.js                [39m[1m[2m 60.04 kB[22m[1m[22m[2m │ gzip:   5.50 kB[22m
+[2mdist/[22m[36massets/hi_IN-WBVD5XYI-D73g2UFs.js                [39m[1m[2m 60.46 kB[22m[1m[22m[2m │ gzip:   8.11 kB[22m
+[2mdist/[22m[36massets/pt_BR-JQFQ3P4L-DOHfdcA2.js                [39m[1m[2m 60.67 kB[22m[1m[22m[2m │ gzip:   5.29 kB[22m
+[2mdist/[22m[36massets/ms_MY-EZSGYYYQ-4cPLK-3L.js                [39m[1m[2m 60.89 kB[22m[1m[22m[2m │ gzip:   5.15 kB[22m
+[2mdist/[22m[36massets/es_419-7LMPU7G4-DH7rM0yQ.js               [39m[1m[2m 60.97 kB[22m[1m[22m[2m │ gzip:   5.67 kB[22m
+[2mdist/[22m[36massets/uk_UA-ZD4IBC52-DgnQrpzl.js                [39m[1m[2m 61.65 kB[22m[1m[22m[2m │ gzip:   6.36 kB[22m
+[2mdist/[22m[36massets/ru_RU-Z42UEJBP-Cvb2oWxQ.js                [39m[1m[2m 62.42 kB[22m[1m[22m[2m │ gzip:   7.00 kB[22m
+[2mdist/[22m[36massets/fr_FR-VBJP3ZLL-B-_ocunw.js                [39m[1m[2m 66.53 kB[22m[1m[22m[2m │ gzip:   5.60 kB[22m
+[2mdist/[22m[36massets/de_DE-YE3KOFHU-BRt5ztUe.js                [39m[1m[2m 66.61 kB[22m[1m[22m[2m │ gzip:   5.58 kB[22m
+[2mdist/[22m[36massets/wagmi-DJ4J2iDY.js                         [39m[1m[2m 66.73 kB[22m[1m[22m[2m │ gzip:  20.11 kB[22m
+[2mdist/[22m[36massets/Linux-OO4TNCLJ-B0aw93n9.js                [39m[1m[2m 91.13 kB[22m[1m[22m[2m │ gzip:  14.88 kB[22m
+[2mdist/[22m[36massets/gsap-aLfjG8Xb.js                          [39m[1m[2m113.12 kB[22m[1m[22m[2m │ gzip:  44.97 kB[22m
+[2mdist/[22m[36massets/react-dom-DI5yEYnb.js                     [39m[1m[2m138.16 kB[22m[1m[22m[2m │ gzip:  44.80 kB[22m
+[2mdist/[22m[36massets/basic-CRhKSK8w.js                         [39m[1m[2m143.12 kB[22m[1m[22m[2m │ gzip:  33.20 kB[22m
+[2mdist/[22m[36massets/index-CLMSban-.js                         [39m[1m[2m231.49 kB[22m[1m[22m[2m │ gzip:  97.81 kB[22m
+[2mdist/[22m[36massets/genlayer-BR665NjQ.js                      [39m[1m[2m243.22 kB[22m[1m[22m[2m │ gzip:  27.04 kB[22m
+[2mdist/[22m[36massets/index-Dn9AUQas.js                         [39m[1m[2m347.86 kB[22m[1m[22m[2m │ gzip:  95.03 kB[22m
+[2mdist/[22m[36massets/index.es-DqDuRD3K.js                      [39m[1m[2m392.16 kB[22m[1m[22m[2m │ gzip: 112.92 kB[22m
+[2mdist/[22m[36massets/core-CG7Pm6UW.js                          [39m[1m[2m492.67 kB[22m[1m[22m[2m │ gzip: 134.48 kB[22m
+[2mdist/[22m[36massets/crypto-C-M0fEyj.js                        [39m[1m[2m493.06 kB[22m[1m[22m[2m │ gzip: 165.31 kB[22m
+[2mdist/[22m[36massets/walletsdk-DeBS3Efz.js                     [39m[1m[33m567.31 kB[39m[22m[2m │ gzip: 173.80 kB[22m
+[2mdist/[22m[36massets/three-BmhObqRD.js                         [39m[1m[33m870.83 kB[39m[22m[2m │ gzip: 238.46 kB[22m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 21.78s[39m

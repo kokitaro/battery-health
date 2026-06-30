@@ -1,0 +1,9 @@
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+/* Let the RainbowKit button stretch to the card width on small layouts. */
+.wrap :global(button) {
+  font-family: var(--display);
+}
